@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Welcome to [DevOps Roast](https://devops-roast.com) — we roast your infra 🔥
+> Welcome to [DevOps Roast](https://devops-roast.com) — we roast your infrastructure 🔥
 > so it doesn’t burn you later.
 
 ## 🌍 Who Are We?
