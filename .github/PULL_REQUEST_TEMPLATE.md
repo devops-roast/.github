@@ -4,8 +4,7 @@ Issue #
 
 ## Description
 
-_Clear and concise description of what changed and why. If necessary, include
-screenshots and/or a step-by-step guide on how to test the changes._
+_Clear and concise description of what changed and why. If necessary, include screenshots and/or a step-by-step guide on how to test the changes._
 
 ## Definition of Done
 
