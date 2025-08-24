@@ -18,5 +18,12 @@ settings:
 patterns:
   - files:
       - .markdownlintrc
+      - .github/renovate.json
+    template:
+      organization:
+        name: "DevOps Roast"
+        name_normalized: "devops-roast"
+        url: "https://devops-roast.com"
+        contact_email: "contact@devops-roast.com"
     repositories:
       - devops-roast/containers
