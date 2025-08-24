@@ -1,0 +1,17 @@
+---
+name: sync-files
+
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  release:
+    uses: devops-roast/github-actions/.github/workflows/sync-files.yaml@main
+    secrets: inherit
