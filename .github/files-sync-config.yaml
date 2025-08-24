@@ -1,0 +1,22 @@
+---
+settings:
+  commit:
+    format: "<%- prefix %>: <%- subject %>"
+    prefix: "chore"
+    subject: "sync files from `<%- repository %>`"
+  pull_request:
+    reviewers:
+      - "shmileee"
+    labels:
+      - "auto-sync"
+    title: "chore: sync files from `<%- repository %>`"
+    merge:
+      mode: auto
+      strategy: squash
+      delete_branch: true
+
+patterns:
+  - files:
+      - .markdownlintrc
+    repositories:
+      - devops-roast/containers

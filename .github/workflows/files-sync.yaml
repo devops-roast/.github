@@ -12,6 +12,6 @@ on:
       - "main"
 
 jobs:
-  release:
+  sync-files:
     uses: devops-roast/github-actions/.github/workflows/sync-files.yaml@main
     secrets: inherit
