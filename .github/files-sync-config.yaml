@@ -26,4 +26,9 @@ patterns:
         url: "https://devops-roast.com"
         contact_email: "contact@devops-roast.com"
     repositories:
+      - devops-roast/.github
       - devops-roast/containers
+      - devops-roast/github-actions
+      - devops-roast/pre-commit-hooks
+      - devops-roast/renovate-config
+      - devops-roast/website
