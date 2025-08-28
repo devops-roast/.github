@@ -19,6 +19,7 @@ patterns:
   - files:
       - .markdownlintrc
       - .github/renovate.json
+      - .github/CODEOWNERS
     template:
       organization:
         name: "DevOps Roast"
