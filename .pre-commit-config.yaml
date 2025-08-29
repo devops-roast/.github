@@ -17,14 +17,24 @@ repos:
     rev: v0.19.1
     hooks:
       - id: gitlint
-        args: [--contrib=contrib-title-conventional-commits, --ignore=body-is-missing, --msg-filename]
+        args:
+          [
+            --contrib=contrib-title-conventional-commits,
+            --ignore=body-is-missing,
+            --msg-filename,
+          ]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.45.0
     hooks:
       - id: markdownlint
         exclude: |
-            (?x)^(
-                .github/PULL_REQUEST_TEMPLATE.md|
-                profile/README.md
-            )$
+          (?x)^(
+              .github/PULL_REQUEST_TEMPLATE.md|
+              profile/README.md
+          )$
+
+  - repo: https://github.com/devops-roast/readme-weaver
+    rev: v0.1.1
+    hooks:
+      - id: readme-weaver
