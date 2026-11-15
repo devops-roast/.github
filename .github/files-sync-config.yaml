@@ -33,3 +33,15 @@ patterns:
       - devops-roast/pre-commit-hooks
       - devops-roast/renovate-config
       - devops-roast/website
+
+  # readme-weaver subscribers: repositories whose README embeds partials from
+  # `common-markdown/` with `<!-- md:include start path="<file>.md" -->` and
+  # `<!-- md:include end -->` markers (paths are relative to
+  # `common-markdown/`). To subscribe a repository, add the markers to its
+  # README and list it here. This repository maintains its own README through
+  # the readme-weaver pre-commit hook instead.
+  - files:
+      - from: .github/files-sync/workflows/readme-weaver.yaml
+        to: .github/workflows/readme-weaver.yaml
+    repositories:
+      - devops-roast/pre-commit-hooks
