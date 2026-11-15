@@ -1,0 +1,22 @@
+---
+name: readme-weaver-distribute
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "common-markdown/**"
+      # new subscribers get their README woven right away
+      - ".github/files-sync-config.yaml"
+  workflow_dispatch:
+
+jobs:
+  readme-weaver-distribute:
+    uses: devops-roast/github-actions/.github/workflows/readme-weaver-distribute.yaml@main
+    with:
+      partials_ref: ${{ github.sha }}
+    secrets: inherit
