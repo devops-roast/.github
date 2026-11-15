@@ -7,6 +7,6 @@ consider buying me a coffee via PayPal:
 
 👉 ‎ <a href="https://www.paypal.me/shmileee"><b><code>paypal.me/shmileee</code></b></a>
 
-Your support is greatly appreciated! 💙💛
+Your support is greatly appreciated! 💙💛 (distribution test, will be reverted)
 
 </div>
