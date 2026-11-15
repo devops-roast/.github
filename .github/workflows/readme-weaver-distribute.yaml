@@ -13,10 +13,11 @@ on:
       # new subscribers get their README woven right away
       - ".github/files-sync-config.yaml"
   workflow_dispatch:
+  pull_request: # [temp] test from this PR
 
 jobs:
   readme-weaver-distribute:
-    uses: devops-roast/github-actions/.github/workflows/readme-weaver-distribute.yaml@main
+    uses: devops-roast/github-actions/.github/workflows/readme-weaver-distribute.yaml@feat/readme-weaver-distribute
     with:
-      partials_ref: ${{ github.sha }}
+      partials_ref: ${{ github.head_ref || github.sha }}
     secrets: inherit
